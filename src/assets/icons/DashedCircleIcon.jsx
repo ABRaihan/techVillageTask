@@ -1,11 +1,12 @@
-function DashedCircleIcon() {
+function DashedCircleIcon({ color }) {
 	return (
 		<svg
 			version='1.1'
 			xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 -40 201.21 300.21'
-			width="24"
-			height="24"
+			viewBox='0 -40 201.21 300.21'
+			width='30'
+			height='30'
+			fill={color || "#000"}
 		>
 			<path
 				d='M166.926,155.377c8.633-10.416,14.741-22.853,17.662-35.965l14.641,3.262c-3.435,15.42-10.612,30.039-20.754,42.275

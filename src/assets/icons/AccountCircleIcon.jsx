@@ -1,12 +1,11 @@
-function AccountCircle() {
+function AccountCircleIcon({ color }) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			enable-background='new 0 0 24 24'
-			height='24px'
+			height='30px'
 			viewBox='0 0 24 24'
-			width='24px'
-			fill='#000000'
+			width='30px'
+			fill={color || "#000000"}
 		>
 			<g>
 				<rect fill='none' height='24' width='24' />
@@ -18,4 +17,4 @@ function AccountCircle() {
 	);
 }
 
-export default AccountCircle;
+export default AccountCircleIcon;

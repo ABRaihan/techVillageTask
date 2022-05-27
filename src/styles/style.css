@@ -2,18 +2,34 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
-a{
+a {
 	text-decoration: none;
 }
-ul{
+ul {
 	list-style: none;
 }
 .container {
 	padding: 0 20px;
 	margin: 0 auto;
 }
-.overlay{
+.overlay {
 	background: rgba(0, 0, 0, 0.299);
+}
+.input__wrapper {
+	border-bottom: 1px solid #acacac;
+}
+.input__control {
+	width: 100%;
+	border: none;
+	color: #000;
+	font-size: 16px;
+	font-weight: 400;
+}
+.input__control::placeholder {
+	color: #acacac;
+}
+.input__control:focus {
+	outline: none;
 }
