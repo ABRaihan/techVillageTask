@@ -1,13 +1,20 @@
 import AddIcon from "../assets/icons/AddIcon";
 import ArrowLeftIcon from "../assets/icons/ArrowLeftIcon";
 import style from "../styles/components/addNewCustomerForm.module.css";
+import { inputValidator } from "../utility/inputChecker";
 function AddNewCustomerForm({
 	setCustomer,
 	updateCustomer,
 	setIsCustomerFormShow,
+	setError,
 	children
 }) {
 	const updateCustomerHandler = () => {
+		const { status, key } = inputValidator(updateCustomer);
+		if (status) {
+			setError({ name: key, status: true, msg: key + " field required" });
+			return;
+		}
 		setCustomer((prev) => ({ ...prev, ...updateCustomer }));
 		setIsCustomerFormShow(false);
 	};

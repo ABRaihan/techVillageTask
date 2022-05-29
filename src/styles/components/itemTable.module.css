@@ -1,0 +1,50 @@
+.item {
+	display: flex;
+	align-items: center;
+	gap: 0 8px;
+}
+.item__row__wrapper {
+	/* overflow-x: scroll; */
+	width: 100%;
+	border: 1px solid #c2c7cd;
+	border-bottom: none;
+	padding: 5px;
+}
+.item:last-child .item__row__wrapper{
+	border-bottom: 1px solid #c2c7cd;
+}
+.item__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0 10px;
+}
+.input__control {
+	border: 1px solid black;
+	min-width: 200px;
+	text-align: center;
+}
+.input__control:focus {
+	outline: none;
+}
+.item__name {
+	max-width: 200px;
+}
+.unit__price{
+	min-width: 80px;
+}
+/* .item__row::-webkit-scrollbar {
+	display: none;
+}
+.item__row {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+} */
+.counter {
+	display: flex;
+	align-items: center;
+	gap: 0 5px;
+}
+.total__price {
+	padding-right: 5px;
+}

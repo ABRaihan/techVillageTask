@@ -1,4 +1,12 @@
-function Input({ type, placeholder, defaultValue, name, changeHandler }) {
+function Input({
+	type,
+	placeholder,
+	defaultValue,
+	name,
+	changeHandler,
+	error,
+	errMsg
+}) {
 	return (
 		<div className='input__wrapper'>
 			<input
@@ -9,6 +17,7 @@ function Input({ type, placeholder, defaultValue, name, changeHandler }) {
 				name={name}
 				onChange={changeHandler}
 			/>
+			{error && <p className='error__msg'>{errMsg}</p>}
 		</div>
 	);
 }

@@ -1,0 +1,5 @@
+@media only screen and (min-width: 1200px) {
+	.items__cart__wrapper {
+		width: 50%;
+	}
+}

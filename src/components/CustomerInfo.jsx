@@ -2,6 +2,7 @@ import { useState } from "react";
 import AccountCircleIcon from "../assets/icons/AccountCircleIcon";
 import AddCircleOutlineIcon from "../assets/icons/AddCircleOutlineIcon";
 import style from "../styles/components/customerInfo.module.css";
+import { inputValidator } from "../utility/inputChecker";
 import AddNewCustomerForm from "./AddNewCustomerForm";
 import Input from "./Input";
 function CustomerInfo() {
@@ -12,10 +13,15 @@ function CustomerInfo() {
 		currency: "USD",
 		taxID: "001"
 	});
-	const updateCustomerInfo = {};
 	const [isCustomerFormShow, setIsCustomerFormShow] = useState(false);
+	const [error, setError] = useState({ name: "", status: false, msg: "" });
+	const updateCustomerInfo = {};
 	const customerFormHandler = (event) => {
 		updateCustomerInfo[event.target.name] = event.target.value;
+		if (error.status) {
+			const { status } = inputValidator(updateCustomerInfo);
+			!status && setError({});
+		}
 	};
 	return (
 		<>
@@ -34,6 +40,7 @@ function CustomerInfo() {
 					setIsCustomerFormShow={setIsCustomerFormShow}
 					setCustomer={setCustomer}
 					updateCustomer={updateCustomerInfo}
+					setError={setError}
 				>
 					<Input
 						type='text'
@@ -41,6 +48,8 @@ function CustomerInfo() {
 						defaultValue={customer.name}
 						name='name'
 						changeHandler={customerFormHandler}
+						error={error.name === "name" && error.status}
+						errMsg={error.msg}
 					/>
 					<Input
 						type='text'
@@ -48,6 +57,8 @@ function CustomerInfo() {
 						defaultValue={customer.email}
 						name='email'
 						changeHandler={customerFormHandler}
+						error={error.name === "email" && error.status}
+						errMsg={error.msg}
 					/>
 					<Input
 						type='text'
@@ -55,6 +66,8 @@ function CustomerInfo() {
 						defaultValue={customer.phone}
 						name='phone'
 						changeHandler={customerFormHandler}
+						error={error.name === "phone" && error.status}
+						errMsg={error.msg}
 					/>
 				</AddNewCustomerForm>
 			)}

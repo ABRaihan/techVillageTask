@@ -1,0 +1,32 @@
+.wrapper {
+	margin: 20px 0;
+}
+.summary__wrapper {
+	width: 220px;
+	display: flex;
+	margin-left: auto;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.summary__title__wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-top: 1px solid #dde0e3;
+	padding: 10px 0;
+}
+.summary__discount {
+	color: #2f6ccf;
+}
+.total__price__wrapper {
+    display: flex;
+    justify-content: space-between;
+	padding: 15px 10px;
+    border-radius: 3px;
+	background-color: #dde7f7;
+}
+.total__price{
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+}
