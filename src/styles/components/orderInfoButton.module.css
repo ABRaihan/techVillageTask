@@ -1,6 +1,7 @@
 .button{
     display: flex;
     align-items: center;
+    flex-grow: 1;
     gap: 0 8px;
     background-color: #E3E6F4;
     color: #5162B9;

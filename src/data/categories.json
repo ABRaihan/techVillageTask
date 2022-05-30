@@ -1,0 +1,31 @@
+[
+	{
+		"name": "/",
+		"title": "All Categories"
+	},
+	{
+		"name": "home & lifestyle",
+		"title": "Home & Lifestyle"
+	},
+	{
+		"name": "men fashion",
+		"title": "Men Fashion"
+	},
+	{
+		"name": "electronics",
+		"title": "Electronics"
+	},
+
+	{
+		"name": "women fashions",
+		"title": "Women Fashions"
+	},
+	{
+		"name": "toys",
+		"title": "Toys"
+	},
+	{
+		"name": "kids",
+		"title": "Kids"
+	}
+]

@@ -1,10 +1,11 @@
-function DiscountIcon() {
+function DiscountIcon({color}) {
 	return (
 		<svg
             xmlns='http://www.w3.org/2000/svg'
-            width="24"
-            height="24"
+            width="30"
+            height="30"
 			viewBox='0 0 1024 1024'
+			fill={color || "#000"}
 		>
 			<path
 				d='M664.52,684.05c-3.64,0-7.22-0.65-10.64-1.94l-100.04-33.58L362.66,583.3c-36.44-11.58-63.37-24.64-109.18-63.58

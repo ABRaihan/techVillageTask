@@ -6,37 +6,37 @@ function BarcodeIcon() {
 			width='35'
 			height='35'
 		>
-			<g data-name='Barcode scanner'>
+			<g>
 				<polyline
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 					points='75.64 440 8.01 440 8.01 370.4'
 				/>
 				<polyline
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 					points='75.64 72 8.01 72 8.01 141.6'
 				/>
 				<polyline
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 					points='436.36 440 503.99 440 503.99 370.4'
 				/>
 				<polyline
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 					points='436.36 72 503.99 72 503.99 141.6'
 				/>
 				<line
@@ -46,9 +46,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='179.75'
@@ -57,9 +57,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='224.59'
@@ -68,9 +68,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='337.23'
@@ -79,9 +79,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='400.74'
@@ -90,9 +90,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='67.46'
@@ -101,9 +101,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='67.46'
@@ -112,9 +112,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='134.9'
@@ -123,9 +123,9 @@ function BarcodeIcon() {
 					y2='315.44'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='134.9'
@@ -134,9 +134,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='179.75'
@@ -145,9 +145,9 @@ function BarcodeIcon() {
 					y2='316.14'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='179.75'
@@ -156,9 +156,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='224.59'
@@ -167,9 +167,9 @@ function BarcodeIcon() {
 					y2='316.13'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='224.59'
@@ -178,9 +178,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='286.65'
@@ -189,9 +189,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='286.65'
@@ -200,9 +200,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='444.79'
@@ -211,9 +211,9 @@ function BarcodeIcon() {
 					y2='349.67'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='444.79'
@@ -222,9 +222,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='337.23'
@@ -233,9 +233,9 @@ function BarcodeIcon() {
 					y2='315.44'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='337.23'
@@ -244,9 +244,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='400.74'
@@ -255,9 +255,9 @@ function BarcodeIcon() {
 					y2='315.44'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='400.74'
@@ -266,9 +266,9 @@ function BarcodeIcon() {
 					y2='202.82'
 					fill='none'
 					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<line
 					x1='49.01'
@@ -276,10 +276,10 @@ function BarcodeIcon() {
 					y1='245.09'
 					y2='245.09'
 					fill='none'
-					stroke='#202020'
-					stroke-linecap='square'
-					stroke-linejoin='round'
-					stroke-width='15'
+					stroke='red'
+					strokeLinecap='square'
+					strokeLinejoin='round'
+					strokeWidth='15'
 				/>
 				<path
 					fill='#20201f'

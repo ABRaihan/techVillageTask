@@ -1,0 +1,14 @@
+.category__btn{
+    border: 1px solid #5E6E7A;
+    padding: 8px 10px;
+    background: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5E6E7A;
+    white-space: nowrap;
+}
+.active__category{
+    border-color: #3C76D3;
+    color: #3C76D3;
+}

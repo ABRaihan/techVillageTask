@@ -1,5 +1,5 @@
 import style from "../styles/components/itemsSummary.module.css";
-function ItemsSummary({ subTotal }) {
+function ItemsSummary({ subTotal, productCount }) {
 	const othersPrice = {
 		tax: 25.5,
 		shipping: 5.5,
@@ -33,7 +33,7 @@ function ItemsSummary({ subTotal }) {
 				</p>
 			</div>
 			<div className={style.total__price__wrapper}>
-				<p>Products Count</p>
+				<p>Products Count({productCount})</p>
 				<p className={style.total__price}>
 					<span>Total</span>
 					<strong>

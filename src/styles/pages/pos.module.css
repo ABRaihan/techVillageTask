@@ -1,5 +1,51 @@
+.items__cart__wrapper {
+	margin: 20px 0;
+}
+.payment__btn__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.items__gallery__wrapper {
+	background-color: #F2F5F7;
+}
+.category__top__bar {
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+}
+.item__inner__wrapper{
+	padding: 25px 20px;
+	border: 1px solid #B4B5B5;
+}
+.category__wrapper {
+	display: flex;
+	overflow-x: scroll;
+	gap: 15px;
+	width: 90%;
+}
+.item__wrapper{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
 @media only screen and (min-width: 1200px) {
-	.items__cart__wrapper {
-		width: 50%;
+	.wrapper{
+		display: flex;
+	}
+	.items__cart__wrapper{
+		padding-right: 20px;
+	}
+	.items__cart__wrapper, .items__gallery__wrapper{
+		width: 100%;
+		align-self: baseline;
+	}
+	.category__wrapper{
+		overflow: auto;
+		width: 100%;
+	}
+	.item__wrapper{
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
