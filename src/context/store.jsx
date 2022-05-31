@@ -5,7 +5,8 @@ const Context = createContext();
 const { Provider } = Context;
 function ContextProvider({ children }) {
 	const storeData = {
-		isSidebarShow: false
+		isSidebarShow: false,
+		isPayNowShow: false
 	};
 	const [state, dispatch] = useReducer(rootReducer, storeData);
 	const actions = createActions(dispatch);

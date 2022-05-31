@@ -42,7 +42,10 @@ function ItemTable({ items, setItems }) {
 		<div className={style.wrapper}>
 			{items.map(({ id, name, unitPrice, quantity }) => (
 				<div key={Math.random()} className={style.item}>
-					<EditIcon clickHandler={itemEditHandler.bind(null, id)} />
+					<EditIcon
+						color='#586875'
+						clickHandler={itemEditHandler.bind(null, id)}
+					/>
 					<div className={style.item__row__wrapper}>
 						<div className={style.item__row}>
 							{id !== editMode.id && (
@@ -62,14 +65,16 @@ function ItemTable({ items, setItems }) {
 							</p>
 							<div className={style.counter}>
 								<RemoveCircleIcon
+									color="#586875"
 									clickHandler={itemQuantityHandler.bind(
 										null,
 										id,
 										"decrement"
 									)}
 								/>
-								<span>{quantity}</span>
+								<span className={style.quantity}>{quantity}</span>
 								<AddCircleIcon
+									color="#586875"
 									clickHandler={itemQuantityHandler.bind(
 										null,
 										id,
@@ -83,6 +88,7 @@ function ItemTable({ items, setItems }) {
 						</div>
 					</div>
 					<DeleteIcon
+						color="#E0514F"
 						clickHandler={itemDeleteHandler.bind(null, id)}
 					/>
 				</div>

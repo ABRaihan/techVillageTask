@@ -37,3 +37,8 @@ ul {
 .input__control:focus {
 	outline: none;
 }
+@media only screen and (min-width: 1200px){
+	button, svg{
+		cursor: pointer;
+	}
+}

@@ -1,24 +1,19 @@
 import style from "../styles/components/itemsSummary.module.css";
-function ItemsSummary({ subTotal, productCount }) {
-	const othersPrice = {
-		tax: 25.5,
-		shipping: 5.5,
-		discount: 10
-	};
+function ItemsSummary({ subTotal, productCount, othersPrice }) {
 	return (
 		<div className={style.wrapper}>
 			<div className={style.summary__wrapper}>
 				<p className={style.summary__title__wrapper}>
 					<span className={style.summary__title}>Sub Total</span>
-					<span>${subTotal.toFixed(2)}</span>
+					<span className={style.other__price}>${subTotal.toFixed(2)}</span>
 				</p>
 				<p className={style.summary__title__wrapper}>
 					<span className={style.summary__title}>TAX</span>
-					<span>${othersPrice.tax}</span>
+					<span className={style.other__price}>${othersPrice.tax}</span>
 				</p>
 				<p className={style.summary__title__wrapper}>
 					<span className={style.summary__title}>Shipping</span>
-					<span>${othersPrice.shipping}</span>
+					<span className={style.other__price}>${othersPrice.shipping}</span>
 				</p>
 				<p className={style.summary__title__wrapper}>
 					<span
@@ -29,11 +24,11 @@ function ItemsSummary({ subTotal, productCount }) {
 					>
 						Discount on Cart
 					</span>
-					<span>${othersPrice.discount}</span>
+					<span className={style.other__price}>${othersPrice.discount}</span>
 				</p>
 			</div>
 			<div className={style.total__price__wrapper}>
-				<p>Products Count({productCount})</p>
+				<p className={style.product__count}>Products Count ({productCount})</p>
 				<p className={style.total__price}>
 					<span>Total</span>
 					<strong>

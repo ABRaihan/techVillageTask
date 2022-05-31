@@ -2,9 +2,9 @@ function DeleteIcon({ color, clickHandler }) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			height='24px'
+			height='30px'
 			viewBox='0 0 24 24'
-			width='24px'
+			width='30px'
 			fill={color || "#000000"}
 			onClick={clickHandler}
 		>

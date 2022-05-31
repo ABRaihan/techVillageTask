@@ -38,3 +38,8 @@
 .category__show, .overlay__show{
     transform: translateX(0);
 }
+@media only screen and (min-width: 1200px){
+    .wrapper, .overlay{
+        width: 50%;
+    }
+}

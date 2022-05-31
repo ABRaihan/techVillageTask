@@ -2,7 +2,7 @@
 	margin: 20px 0;
 }
 .summary__wrapper {
-	width: 220px;
+	width: 200px;
 	display: flex;
 	margin-left: auto;
 	flex-direction: column;
@@ -12,21 +12,44 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	border-top: 1px solid #dde0e3;
+	border-top: 2px solid #dde0e3;
 	padding: 10px 0;
+}
+.summary__title{
+	color: #586875;
 }
 .summary__discount {
 	color: #2f6ccf;
+	font-weight: 600;
+}
+.other__price{
+	font-size: 18px;
+	font-weight: 600;
 }
 .total__price__wrapper {
     display: flex;
     justify-content: space-between;
+	align-items: center;
 	padding: 15px 10px;
     border-radius: 3px;
 	background-color: #dde7f7;
 }
+.product__count{
+	color: #2F6CCF;
+}
 .total__price{
     display: flex;
     justify-content: space-between;
-    width: 210px;
+    width: 190px;
+	color: #2F6CCF;
+	font-size: 18px;
+	font-weight: 600;
+}
+@media only screen and (min-width: 768px){
+	.summary__wrapper{
+		width: 220px;
+	}
+	.total__price{
+		width: 210px;
+	}
 }

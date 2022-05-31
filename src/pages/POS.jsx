@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import DiscountIcon from "../assets/icons/DiscountIcon";
 import HandGrabIcon from "../assets/icons/HandGrabIcon";
 import HighlightOffIcon from "../assets/icons/HighlightOffIcon";
@@ -17,7 +17,10 @@ import ItemCart from "../components/ItemCart";
 import { dummyItems } from "../data/items.js";
 import { isItemExist } from "../utility/itemExistCheck";
 import OrderInfoTopBar from "../components/OrderInfoTopBar";
+import PayNow from "./pos/PayNow";
+import { Context } from "../context/store";
 function POS() {
+	const { state, actions } = useContext(Context);
 	const [items, setItems] = useState(dummyItems);
 	const [selectItems, setSelectItems] = useState([
 		{
@@ -46,6 +49,11 @@ function POS() {
 		(prev, curr) => prev + curr.unitPrice * curr.quantity,
 		0
 	);
+	const othersPrice = {
+		tax: 25.5,
+		shipping: 5.5,
+		discount: 10
+	};
 	const itemAddHandler = (item) => {
 		if (isItemExist(item, selectItems)) {
 			alert("Item Already Added");
@@ -79,6 +87,7 @@ function POS() {
 							setItems={setSelectItems}
 						/>
 						<ItemsSummary
+							othersPrice={othersPrice}
 							subTotal={subTotal}
 							productCount={selectItems.length}
 						/>
@@ -108,64 +117,78 @@ function POS() {
 								title='Pay Now'
 								bgColor='#D1DFF5'
 								color='#2F6CCF'
+								clickHandler={() => actions.setPayNowShow(true)}
 							>
 								<PaymentIcon color='#2F6CCF' />
 							</PaymentButton>
 						</div>
 					</div>
 					<div className={style.items__gallery__wrapper}>
-						<SearchBar />
-						<div className={style.item__inner__wrapper}>
-							<div className={style.category__top__bar}>
-								<div className={style.category__wrapper}>
-									{categories.map(
-										({ title, name }, index) => {
-											if (index <= 5) {
-												return (
-													<CategoryButton
-														clickHandler={categoryFilterHandler.bind(
-															null,
-															name
-														)}
-														active={
-															activeCategory ===
-															name
-														}
-														key={Math.random()}
-														title={title}
-													/>
-												);
-											}
-											return null;
-										}
-									)}
-								</div>
-								<MoreVerticalIcon
-									clickHandler={() =>
-										setCategoryModalShow(true)
-									}
-								/>
-							</div>
-							<CategoryModal
-								activeCategory={activeCategory}
-								categories={categories}
-								categoryModalShow={categoryModalShow}
-								setCategoryModalShow={setCategoryModalShow}
-								filterHandler={categoryFilterHandler}
+						{state.isPayNowShow ? (
+							<PayNow
+								subTotal={subTotal}
+								othersPrice={othersPrice}
 							/>
-							<div className={style.item__wrapper}>
-								{items.map((item) => (
-									<ItemCart
-										key={Math.random()}
-										item={item}
-										clickHandler={itemAddHandler.bind(
-											null,
-											item
-										)}
+						) : (
+							<>
+								<SearchBar />
+								<div className={style.item__inner__wrapper}>
+									<div className={style.category__top__bar}>
+										<div
+											className={style.category__wrapper}
+										>
+											{categories.map(
+												({ title, name }, index) => {
+													if (index <= 5) {
+														return (
+															<CategoryButton
+																clickHandler={categoryFilterHandler.bind(
+																	null,
+																	name
+																)}
+																active={
+																	activeCategory ===
+																	name
+																}
+																key={Math.random()}
+																title={title}
+															/>
+														);
+													}
+													return null;
+												}
+											)}
+										</div>
+										<MoreVerticalIcon
+											clickHandler={() =>
+												setCategoryModalShow(true)
+											}
+										/>
+									</div>
+									<CategoryModal
+										activeCategory={activeCategory}
+										categories={categories}
+										categoryModalShow={categoryModalShow}
+										setCategoryModalShow={
+											setCategoryModalShow
+										}
+										filterHandler={categoryFilterHandler}
 									/>
-								))}
-							</div>
-						</div>
+									<div className={style.item__wrapper}>
+										{items.map((item) => (
+											<ItemCart
+												key={Math.random()}
+												item={item}
+												clickHandler={itemAddHandler.bind(
+													null,
+													item
+												)}
+											/>
+										))}
+									</div>
+								</div>
+							</>
+						)}
 					</div>
 				</div>
 			</div>
