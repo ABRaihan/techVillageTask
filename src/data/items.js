@@ -1,5 +1,5 @@
 import men from "../assets/images/men.webp";
-import kid from "../assets/images/kids.webp";
+import kids from "../assets/images/kids.webp";
 export const dummyItems = [
 	{
 		id: 1,
@@ -27,7 +27,7 @@ export const dummyItems = [
 		name: "Navi Blue",
 		unitPrice: 100.0,
 		category: "kids",
-		img: kid
+		img: kids
 	},
 	{
 		id: 5,
@@ -41,28 +41,28 @@ export const dummyItems = [
 		name: "Gray With Sleeve",
 		unitPrice: 91.0,
 		category: "kids",
-		img: kid
+		img: kids
 	},
 	{
 		id: 7,
 		name: "Pure White Shirt",
 		unitPrice: 91.0,
 		category: "men fashion",
-		img: kid
+		img: kids
 	},
 	{
 		id: 8,
 		name: "Pure Polo White",
 		unitPrice: 95.0,
 		category: "kids",
-		img: kid
+		img: kids
 	},
 	{
 		id: 9,
 		name: "Selowar Kamiz",
 		unitPrice: 88.0,
 		category: "women fashions",
-		img: kid
+		img: kids
 	},
 	{
 		id: 10,

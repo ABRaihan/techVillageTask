@@ -1,0 +1,30 @@
+.category__top__bar {
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+}
+.category__wrapper {
+	display: flex;
+	overflow-x: scroll;
+	gap: 15px;
+	width: 90%;
+}
+.category__wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.category__wrapper {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+@media only screen and (min-width: 768px) {
+	.category__wrapper {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.category__wrapper {
+		overflow-x: auto;
+		width: 100%;
+	}
+}

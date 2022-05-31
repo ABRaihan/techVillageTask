@@ -8,7 +8,7 @@ function App() {
 	const navigate = useNavigate();
 	useEffect(() => {
 		navigate("/invoice", { replace: true });
-	}, []);
+	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 	return (
 		<ContextProvider>
 			<Sidebar />

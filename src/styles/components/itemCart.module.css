@@ -17,3 +17,8 @@
     font-weight: 600;
     border-bottom: 1px solid #E1E2E4;
 }
+@media only screen and (min-width: 1200px){
+    .cart{
+        cursor: pointer;
+    }
+}

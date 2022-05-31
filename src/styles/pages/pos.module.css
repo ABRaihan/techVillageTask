@@ -9,29 +9,12 @@
 .items__gallery__wrapper {
 	background-color: #f2f5f7;
 }
-.category__top__bar {
-	margin-bottom: 25px;
-	display: flex;
-	align-items: center;
-}
+
 .item__inner__wrapper {
 	padding: 25px 20px;
 	border: 1px solid #b4b5b5;
 }
-.category__wrapper {
-	display: flex;
-	overflow-x: scroll;
-	gap: 15px;
-	width: 90%;
-}
-.category__wrapper::-webkit-scrollbar {
-	display: none;
-}
 
-.category__wrapper {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
 .item__wrapper {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -39,9 +22,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.category__wrapper{
-		width: 100%;
-	}
 	.item__wrapper {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -57,10 +37,6 @@
 	.items__gallery__wrapper {
 		width: 100%;
 		align-self: baseline;
-	}
-	.category__wrapper {
-		overflow: auto;
-		width: 100%;
 	}
 	.item__wrapper {
 		grid-template-columns: repeat(5, 1fr);

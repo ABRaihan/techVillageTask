@@ -10,10 +10,26 @@ import style from "../styles/components/sidebar.module.css";
 function Sidebar() {
 	const { state, actions } = useContext(Context);
 	const navigationMenus = [
-		{ name: "Dashboard", path: "/dashboard", icon: <DashboardIcon /> },
-		{ name: "Locations", path: "/locations", icon: <LocationIcon /> },
-		{ name: "POS Invoices", path: "/invoice", icon: <CashIcon /> },
-		{ name: "Settings", path: "/settings", icon: <SettingIcon /> }
+		{
+			name: "Dashboard",
+			path: "/dashboard",
+			icon: <DashboardIcon color='#586875' />
+		},
+		{
+			name: "Locations",
+			path: "/locations",
+			icon: <LocationIcon color='#586875' />
+		},
+		{
+			name: "POS Invoices",
+			path: "/invoice",
+			icon: <CashIcon color='#586875' />
+		},
+		{
+			name: "Settings",
+			path: "/settings",
+			icon: <SettingIcon color='#586875' />
+		}
 	];
 	return (
 		<>
@@ -52,6 +68,9 @@ function Sidebar() {
 						</li>
 					))}
 				</ul>
+				<div className={style.logout__btn__wrapper}>
+					<button className={style.logout__btn}>Logout</button>
+				</div>
 			</div>
 			<div
 				className={`${style.overlay} ${

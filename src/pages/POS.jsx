@@ -3,7 +3,6 @@ import DiscountIcon from "../assets/icons/DiscountIcon";
 import HandGrabIcon from "../assets/icons/HandGrabIcon";
 import HighlightOffIcon from "../assets/icons/HighlightOffIcon";
 import PaymentIcon from "../assets/icons/PaymentIcon";
-import CategoryButton from "../components/CategoryButton";
 import CustomerInfo from "../components/CustomerInfo";
 import ItemsSummary from "../components/ItemsSummary";
 import ItemTable from "../components/ItemTable";
@@ -11,7 +10,6 @@ import PaymentButton from "../components/PaymentButton";
 import SearchBar from "../components/SearchBar";
 import style from "../styles/pages/pos.module.css";
 import categories from "../data/categories.json";
-import MoreVerticalIcon from "../assets/icons/MoreVerticalIcon";
 import CategoryModal from "../components/CategoryModal";
 import ItemCart from "../components/ItemCart";
 import { dummyItems } from "../data/items.js";
@@ -19,6 +17,7 @@ import { isItemExist } from "../utility/itemExistCheck";
 import OrderInfoTopBar from "../components/OrderInfoTopBar";
 import PayNow from "./pos/PayNow";
 import { Context } from "../context/store";
+import CategoryBar from "../components/CategoryBar";
 function POS() {
 	const { state, actions } = useContext(Context);
 	const [items, setItems] = useState(dummyItems);
@@ -133,38 +132,15 @@ function POS() {
 							<>
 								<SearchBar />
 								<div className={style.item__inner__wrapper}>
-									<div className={style.category__top__bar}>
-										<div
-											className={style.category__wrapper}
-										>
-											{categories.map(
-												({ title, name }, index) => {
-													if (index <= 5) {
-														return (
-															<CategoryButton
-																clickHandler={categoryFilterHandler.bind(
-																	null,
-																	name
-																)}
-																active={
-																	activeCategory ===
-																	name
-																}
-																key={Math.random()}
-																title={title}
-															/>
-														);
-													}
-													return null;
-												}
-											)}
-										</div>
-										<MoreVerticalIcon
-											clickHandler={() =>
-												setCategoryModalShow(true)
-											}
-										/>
-									</div>
+									<CategoryBar
+										activeCategory={activeCategory}
+										categoryFilterHandler={
+											categoryFilterHandler
+										}
+										setCategoryModalShow={
+											setCategoryModalShow
+										}
+									/>
 									<CategoryModal
 										activeCategory={activeCategory}
 										categories={categories}

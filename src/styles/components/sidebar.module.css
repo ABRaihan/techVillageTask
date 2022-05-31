@@ -58,16 +58,40 @@
 .active__menu svg {
 	fill: #5162b9;
 }
+.logout__btn__wrapper{
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	padding: 0 20px;
+}
+.logout__btn{
+	background: none;
+	border: 1px solid #A9B2B9;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #586875;
+	width: 100%;
+}
 .overlay {
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: calc(100% - 230px);
-	background-color: #1e272e4C;
+	background-color: #1e272e4c;
 	height: 100vh;
 	transition: 0.3s;
 	transform: translateX(100%);
 }
 .overlay__show {
 	transform: translateX(0);
+}
+@media only screen and (min-width: 768px) {
+	.wrapper {
+		width: 320px;
+	}
+	.overlay{
+		width: calc(100% - 320px);
+	}
 }
